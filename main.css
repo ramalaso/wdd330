@@ -9,11 +9,11 @@
 body {
   width: 60%;
   margin: 20px auto ;
-  background-color: #000;
+  background-color:#296ca8;
 }
 
 header {
-  background-color: rgb(77, 42, 158);
+  background-color:  #4992d3;
   color: #fff;
   text-align: center;
   padding: 2rem;
@@ -22,7 +22,8 @@ header {
 }
 
 main {
-  background-color: #fff;
+  background-color:  #4992d3;
+  color: #fff;
   height: 100vh;
   padding: 3rem;
   border-radius: 5px;
@@ -34,11 +35,10 @@ ul {
 
 ul li {
   margin-top: 1rem;
-  color: #d80e0e;
 }
 
-ul li a {
+ul li a, ul li a:visited {
   text-decoration: none;
-  color: #d80e0e;
   font-weight: bold;
+  color: #fff;
 }
