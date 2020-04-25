@@ -1,44 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
-  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
+
 body {
-  width: 60%;
-  margin: 20px auto ;
-  background-color:#296ca8;
+  background-color: #296ca8;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding-bottom: 100px;
 }
 
-header {
-  background-color:  #4992d3;
-  color: #fff;
+
+h1 {
+  margin-bottom: 0;
   text-align: center;
-  padding: 2rem;
-  border-radius: 5px;
-  margin-bottom: 30px ;
 }
 
-main {
-  background-color:  #4992d3;
+.lesson {
+  position: relative;
+  background-color: #4992d3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin: 40px 0;
+  display: flex;
+  width: 80vw;
+  max-width: 800px;
+  border-radius: 3px;
+}
+
+.lesson .post-title {
+  margin: 0;
+}
+
+.lesson .post-body {
+  margin: 15px 0 0;
+  line-height: 1.3;
+}
+
+.lesson .post-info {
+  margin-left: 20px;
+}
+
+.lesson .number {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  font-size: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  color: #296ca8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lesson .lesson-info a {
   color: #fff;
-  height: 100vh;
-  padding: 3rem;
-  border-radius: 5px;
-}
-
-ul {
-  list-style-type: circle ;
-}
-
-ul li {
-  margin-top: 1rem;
-}
-
-ul li a, ul li a:visited {
   text-decoration: none;
-  font-weight: bold;
-  color: #fff;
 }
