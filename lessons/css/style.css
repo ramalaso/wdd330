@@ -23,7 +23,6 @@ body {
 
 .paper-shadow p {
   text-align: justify;
-  line-height: 1.5rem;
 }
 .paper-shadow:after, .paper-shadow:before{
  content: '';
