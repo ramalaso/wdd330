@@ -11,18 +11,26 @@
     <h1 class= "title">W02 Report </h1>
     <div class="report">
      
-        <h2> What did I do since the last meeting?</h2>
+        <h2> Notes</h2>
         <p>
-          This week was very exciting learn more about the principles of JavaScript. We have at first some issues related to our meetings but at the end of the day we could work together solving the first team assignment. 
-          I read the book wich is really interesting and I am now reading more videos about JavaScript in sitepoint, it is a great web.
-          <br>
           We have our code in the following codepen repository: <a href="https://codepen.io/ramalaso/pen/yLYowMz">WDD 02 - Team Activity</a>
+          JavaScript is a very different language in many aspects to others object oriented programming languages. <br>
+          Sometimes comparison operators can display strange results with NAN.
+          Function are the best way to organize our code in chinks related with an desired outcome. 
         </p>
 
-        <h2> What am I going to do next?</h2> 
-        <p>The next week I am going to read the week 3 assignments and code with my team. </p>
-        <h2> What are my blockers?</h2>
-        <p>None</p>
+        <h2> Questions?</h2> 
+        <p>Which use can we have for bitwise operators? </p>
+        <h2> Code Example</h2>
+        <p>function add() { <br>
+          const newValue = parseInt(document.getElementById("my-input2").value); <br>
+          const showElement = document.getElementById("show-sum"); <br>
+          const oldValue = parseInt(showElement.innerText) || 0; <br>
+        
+          if (!isNaN(newValue)) { <br>
+            showElement.innerText = newValue + oldValue; <br>
+          }
+        }</p>
         
 
 
