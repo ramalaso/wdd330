@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>W05 Report </title>
+</head>
+<body>
+  <div class="paper-shadow">
+    <h1 class= "title">W07 Report </h1>
+    <div class="report">
+     
+        <h2> Code Examples</h2>
+      
+        <code>function sayHello(greeting='Hello'){ <br>
+          return `${ greeting }, my name is ${ this.name }`; <br>
+      } <br>
+      sayHello.call(clark, 'How do you do'); <br>
+      >>'How do you do, my name is Clark'  <br>
+      sayHello.call(bruce); <br>
+      >> 'Hello, my name is Bruce' <br>
+
+      <hr>
+      function square(x){ <br>
+        square.cache = square.cache || {}; <br>
+        if (!square.cache[x]) { <br>
+            square.cache[x] = x*x; <br>
+        } <br>
+        return square.cache[x] <br>
+      } <br>
+      <hr>
+      login(userName, function(error,user) { <br>
+        if(error){ <br>
+            throw error; <br>
+        } else {   <br>
+            getPlayerInfo(user.id, function(error,info){ <br>
+            if(error){ <br>
+            throw error; <br>
+            } else { <br>
+                loadGame(info, function(error,game) { <br>
+                    if(error){ <br>
+                            throw error; <br>
+                        } else { <br>
+                        // code to run game <br>
+                    } <br>
+                }); <br>
+            } <br>
+            }); <br>
+        } <br>
+    }); <br>
+      </code> 
+    
+     
+    </div>
+  </div>
+  
+
+  </div>
+</body>
+</html>
