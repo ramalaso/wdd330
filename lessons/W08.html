@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>W05 Report </title>
+</head>
+<body>
+  <div class="paper-shadow">
+    <h1 class= "title">W08 Report </h1>
+    <div class="report">
+     
+      <h2> Notes</h2>
+      <p>
+        We have our code in the following codepen repository: <a href="https://codepen.io/ramalaso/pen/OJMNaWg">WDD 08 - Team Activity</a> <br>
+        The CSS3 transform property lets you lets you translate, rotate, scale, and/or skew any element on the page.<br>
+        We can manipulate an element’s appearance usingtransform functions. <br>
+        Translation functions allow you to move elements left, right, up, or down. <br>
+        The scale(x,y) function scales an element by the defined factors horizontally then vertically. <br>
+        The rotate() function rotates an element around the point of origin by a specified angle value.  <br>
+        The skew(x,y) function specifies a skew along the x and y axes. <br>
+        Animation has certainly been possible for some time with JavaScript, but native CSS transitions generally require less client-side processing, so they’ll usually appear smoother. On mobile devices with limited computing power, this can be a lifesaver. <br>
+        The transition-property property defines the CSS properties of the element that should be transitioned, with all for all properties being the default. <br>
+        The transition-duration property sets how long the transition will take: the duration of time it takes to go from the default state to the transitioned state. <br>
+        </p>
+
+      <h2> Questions?</h2> 
+      <p>  Can I get the API data ready for working just with one promise or is necessary to have two steps of promises?</p>
+      <h2> Code Example</h2>
+      <code> const renderDetails = (url) => { <br>
+        fetch(url) <br>
+            .then(response => response.json()) <br>
+            .then(response => { <br>
+                document.getElementById('name').innerHTML = `${response.name}`; <br>
+                document.getElementById('ability').innerHTML = `${response.abilities[0].ability.name}`; <br>
+                document.getElementById('is_hidden').innerHTML = `${response.abilities[0].is_hidden}`; <br>
+                document.getElementById('slot').innerHTML = `${response.abilities[0].slot}`; <br>
+                document.getElementById('details').classList.remove('hidden'); <br>
+                console.log(response); <br>
+            }) <br>
+            .catch(err => console.log(err));  <br>
+      </code> 
+  </div>
+</body>
+</html>

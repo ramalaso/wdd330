@@ -47,7 +47,6 @@ ul {
       text-transform: uppercase;
   }
 
-
   @media(max-width: 700px) {
     body {
        display: flex;
