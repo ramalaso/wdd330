@@ -10,7 +10,7 @@ function playSound(e) {
     if (times[index] == 10) {
       times[index] = 0;
     }
-    // e.style.position = 'relative';aaa
+
     let element = document.querySelector(`[data-key="${e.keyCode}"]`);
     element.style.position = 'relative';
     element.style.left = '0px';
