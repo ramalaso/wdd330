@@ -50,11 +50,8 @@ export default class QuakesController {
         console.log(this.position);
         const quakeList = await this.quakes.getEarthQuakesByRadius(
             this.position,
-            500
+            radius
         );
-        if (quakeList === undefined) {
-            this.parentElement.innerHTML = 'There are no quakes near me...';
-        }
         // render the list to html
         this.quakesView.renderQuakeList(quakeList, this.parentElement);
         // add a listener to the new list of quakes to allow drill down in to the details

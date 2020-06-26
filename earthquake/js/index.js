@@ -23,18 +23,3 @@ getLocation().then(data => {
     quakesController.init();
     quakesController.getQuakesByRadius(500);
 });
-
-// );
-// const latitude = getLocation().then(data => data.coords.latitude);
-// const longitude = getLocation().then(data => data.coords.longitude);
-// console.log(latitude.then(data => data.value), longitude)
-// const position = {
-//     latitude: latitude,
-//     longitude: longitude
-// }
-
-// console.log(position);
-
-// const quakesController = new QuakesController("#quakeList", { latitude: -17, longitude: -66 });
-// quakesController.init();
-// quakesController.getQuakesByRadius();
