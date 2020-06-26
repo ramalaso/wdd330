@@ -6,10 +6,10 @@ export default class QuakesView {
         listElement.innerHTML = quakeList.features
             .map(quake => {
                 return `
-  ${quake.properties.title}, ${new Date(
+                <li> ${quake.properties.title}, ${new Date(
                     quake.properties.time
-                )}
-  `;
+                )} </li>
+                `;
             })
             .join('');
     }
