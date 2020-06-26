@@ -47,9 +47,10 @@ export default class QuakesController {
         //set loading message
         this.parentElement.innerHTML = 'Loading...';
         // get the list of quakes in the specified radius of the location
+        console.log(this.position);
         const quakeList = await this.quakes.getEarthQuakesByRadius(
             this.position,
-            100
+            500
         );
         if (quakeList === undefined) {
             this.parentElement.innerHTML = 'There are no quakes near me...';
