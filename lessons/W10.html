@@ -1,62 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <title>W05 Report </title>
 </head>
+
 <body>
   <div class="paper-shadow">
-    <h1 class= "title">W09 Report </h1>
+    <h1 class="title">W10 Report </h1>
     <div class="report">
-     
+
       <h2> Notes</h2>
       <p>
-        We have our code in the following codepen repository: <a href="https://plnkr.co/edit/HvhEJ2bujEhjmVlC?open=lib%2Fscript.js">WDD 09 - Team Activity</a> <br>
-        Before submitting data to the server, it is important to ensure all required form controls are filled out, in the correct format. <br>
+        We have our code in the following codepen repository: <a href="https://plnkr.co/plunk/o4FxeMedyMm2xqgp">Week 10
+          - Team Activity</a> <br>
+        Before submitting data to the server, it is important to ensure all required form controls are filled out, in
+        the correct format. <br>
         This is called client-side form validation <br>
-        Go to any popular site with a registration form, and you will notice that they provide feedback when you don't enter your data in the format they are expecting. <br>
+        Go to any popular site with a registration form, and you will notice that they provide feedback when you don't
+        enter your data in the format they are expecting. <br>
         There are two different types of client-side validation that you'll encounter on the web: <br>
         1) Built-in form validation <br>
         2) JavaScript <br>
-        Another useful validation feature is the pattern attribute, which expects a Regular Expression as its value. <br>
-        The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses. It also provides a global fetch() method that provides an easy, logical way to fetch resources asynchronously across the network. <br>
+        Another useful validation feature is the pattern attribute, which expects a Regular Expression as its value.
+        <br>
+        The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as
+        requests and responses. It also provides a global fetch() method that provides an easy, logical way to fetch
+        resources asynchronously across the network. <br>
         The Headers interface allows you to create your own headers object via the Headers() <br>
         The most common response properties you'll use are: <br>
 
         Response.status — An integer (default value 200) containing the response status code. <br>
         Response.statusText — A string (default value "OK"), which corresponds to the HTTP status code message. <br>
-        Response.ok — seen in use above, this is a shorthand for checking that status is in the range 200-299 inclusive. This returns a Boolean. <br>
+        Response.ok — seen in use above, this is a shorthand for checking that status is in the range 200-299 inclusive.
+        This returns a Boolean. <br>
       </p>
 
-      <h2> Questions?</h2> 
+      <h2> Questions?</h2>
       <p> What is the diferrence between AJAX and Node js?</p>
       <h2> Code Example</h2>
-      <code> function playSound(e) { <br>
-        var keys = [65, 83, 68, 70, 71, 72, 74, 75, 76]; <br>
-        console.log(keys.includes(e.keyCode)); <br>
-        //If the key is a valid one <br>
-        if (keys.includes(e.keyCode)) { <br>
-          index = keys.indexOf(e.keyCode); <br>
-          times[index]++; <br>
-          if (times[index] == 10) {<br>
-            times[index] = 0; <br>
-          } <br>
-        
-          let element = document.querySelector(`[data-key="${e.keyCode}"]`); <br>
-          element.style.position = 'relative'; <br>
-          element.style.left = '0px'; <br>
-          element.style.top = '0px'; <br>
-          element.style.top = parseInt(element.style.top) + 10 * times[index] + 'px'; <br>
-          console.log(times); <br>
-          let audio = document.querySelector('#audio' + e.keyCode); <br>
-          audio.currentTime = 0; <br>
-          console.dir(audio); <br>
-          audio.play(); <br>
-        } <br>
-      } <br>
-      </code> 
-  </div>
+      <code> import QuakesController from '../controllers/QuakesController.js'; <br>
+        import { getJSON, getLocation } from '../js/utilities.js'; <br>
+            getLocation().then(data => { <br>
+            const latitude = data.coords.latitude; <br>
+            const longitude = data.coords.longitude; <br>
+            const position = { <br>
+                lat: latitude, <br>
+                lon: longitude <br>
+            }
+            console.log(position); <br>
+            const quakesController = new QuakesController("#quakeList", position); <br>
+            console.log(quakesController); <br>
+            quakesController.init(); <br>
+            quakesController.getQuakesByRadius(500); <br>
+        });
+      </code>
+    </div>
 </body>
+
 </html>
