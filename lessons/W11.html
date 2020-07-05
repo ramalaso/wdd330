@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>W05 Report </title>
+</head>
+
+<body>
+  <div class="paper-shadow">
+    <h1 class="title">W11 Report </h1>
+    <div class="report">
+
+      <h2> Notes</h2>
+      <p>
+        We have our code in the following codepen repository: <a href="https://plnkr.co/edit/gfjXJMhS6ApUkC5A">Week 11
+          - Team Activity</a> <br>
+      </p>
+
+      <h2> Questions?</h2>
+      <p> None</p>
+      <h2> Code Example</h2>
+      <code> //Auth class which provides basic JWT based authentication for our app. <br>
+        // Requires: access to the makeRequest  functions <br>
+        import { makeRequest } from './authHelpers.js'; <br>
+        export default class Auth { <br>
+          constructor() { <br>
+            this.jwtToken = ''; <br>
+            this.user = {}; <br>
+          } <br>
+        
+          async login(callback) { <br>
+            // replace the ids below with whatever you used in your form. <br>
+            const password = document.getElementById('password'); <br>
+            const username = document.getElementById('username'); <br>
+            const postData = { <br>
+              email: username.value, <br>
+              password: password.value  <br>
+            }; <br>
+      </code>
+    </div>
+</body>
+
+</html>
