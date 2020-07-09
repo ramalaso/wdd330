@@ -67,3 +67,8 @@ h1 {
   color: #fff;
   text-decoration: none;
 }
+
+#project-body {
+  color:#fafa00;
+  font-weight: 500;
+}
